@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h5>measured resistance vs. temp</h5>
+<ul>
+    <li>5 kOhm at 110 degrees</li>
+    <li>27.6 kOhm 32 degrees</li>
+    <li>7.5 kOhm 90 Degrees</li>
+</ul>
+<p>
+linear regression formula
+ŷ = -0.30246X + 36.7567
+</p>
+<h5>mission statement</h5>
+<p>
+    this is the critical range of the controller that reads the sensors. when it goes out of the 32* to 110* range it causes an eror in the controller and possibly confuses the technition. this is what i would like to avoid.
+</p>
+<h5>technical overview</h5>
+<p>
+there are 3 temp sensors that the hvac uses to determine function. there are groups that they fit into.
+</p>
+<h6>return</h6>
+<p>
+    the return sensor is individually adjusted to manipulate the hvac. this is one knob controls one physical output.
+</p>
+<h6>ambient and duct</h6>
+<p>
+    the amb. and duct sensor are gouped to the same adjustment. this means one knob should control two physical outputs
+</p>
+
+
+need to make a box that does not go out of range for the sensors it is simulating. this causes people to think something is wrong where they are just not familiar with the tool.
+</body>
+</html>
+
+
