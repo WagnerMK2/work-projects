@@ -1,0 +1,48 @@
+originally the hvac has three temp sensors it uses to regulate itself
+return, duct and ambient
+in the simulator the return is independant and the duct and ambient is combined
+the duct and ambient combined changes its resistance range for the simulator box
+
+during a PM and diagnosis we use a box and a couple of potentiometers to simulate a variety of temps to force the unit into the modes and to switch between modes.
+
+we use one sensor for all three inputs.
+its specs are
+5 kOhm at 110 degrees
+27.6 kOhm 32 degrees
+7.5 kOhm 90 Degrees
+
+the simulator box needs/uses the following
+
+RETURN sensor
+111.9*f @ 4.8kOhm
+65*f @ 13kOhm
+32*f @ 29.16kOhm
+
+so range of 25kOhm from 5kOhm to 30kOhm
+low spec=5 kOhm
+high spec=30 kOhm
+range=25 kOhm
+
+DUCT and AMBIENT
+
+2.8kOhm @ 103.4*f
+20.3kOhm @ 19.4*f
+
+so range of 18kOhm from 2.8kOhm to 20.3kOhm
+
+low spec=3kOhm
+high sped=20kOhm
+range=17kOhm
+
+PARTS
+
+RETURN
+25-28kOHm range potentiometer. 3/8 min threaded shaft diameter. knob shaft tall enough for a knob
+5kOhm resistor min 1/4W solderable leads
+XXXXXX resistor to trim top range for resistance range
+
+AMB/DUCT
+17-25kOhm range potentiometer.  3/8 min threaded shaft diameter. knob shaft tall enough for a knob
+3kOhm resistor 1/4W inline solderable
+XXXXX resistor to trim top resistance range
+
